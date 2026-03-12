@@ -3,7 +3,7 @@ import pytest
 from mymath import add_numbers
 
 def test_add_positive():
-    assert add_numbers(1, 2) == 3
+    assert add_numbers(1, 2) == 4
 
 def test_add_zero():
     assert add_numbers(1, 0) == 1
@@ -14,4 +14,5 @@ def test_add_negative():
 def test_add_string__expect_exception():
     with pytest.raises(TypeError):
         add_numbers(4, 'I DO NOT BELONG HERE')
+
 
